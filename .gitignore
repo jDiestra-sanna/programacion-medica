@@ -1,0 +1,29 @@
+# Dependencias
+/vendor/
+
+# Configuración local
+.env
+.env.*
+
+# Archivos de logs
+*.log
+
+# Archivos temporales
+*.tmp
+*.bak
+*.swp
+
+# Backups
+/BACKUPS/
+*.sql
+*.zip
+*.tar
+*.gz
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Configuración del editor
+.vscode/
+.idea/

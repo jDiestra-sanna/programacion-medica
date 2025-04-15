@@ -1,0 +1,190 @@
+:root {
+
+  --is-big: green;
+
+}
+.scheduler {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.scheduler,
+.scheduler th,
+.scheduler td {
+  border: 1px solid black;
+  
+ height: auto ;
+  
+  font-size: 12px;
+  
+ 
+}
+  
+.scheduler .scheduler-hour-toggle{
+
+ 
+--transform: translate(0px, 20px) rotate(-90deg) ;
+ 
+background-color: #8fed8f;
+text-align: center; 
+vertical-align: middle;
+}
+.scheduler .scheduler-day-toggle{
+  background-color: #8fed8f;
+}
+.scheduler .scheduler-hour {
+  width: 15px;
+  
+}
+
+.scheduler-time-title,
+.scheduler-week-title {
+  padding: 0 5px;
+}
+
+.scheduler-time-title {
+  text-align: right;
+
+}
+
+.scheduler-week-title {
+  text-align: left;
+}
+
+.scheduler .slash {
+  width: 70px !important;
+ height: 60px;
+ background-color: #8fed8f;
+}
+
+ 
+.scheduler-day-toggle,
+.scheduler-half-toggle,
+.scheduler-hour-toggle {
+  --cursor: pointer;
+
+}
+
+.scheduler>tfoot>tr>td {
+  text-align: left;
+  padding: 0 5px;
+}
+
+.scheduler-reset {
+  float: right;
+}
+
+tr:nth-child(n+1):nth-child(-n+36) td.scheduler-active {
+  background-color: #87bd41;
+}
+td.scheduler-active-disabled {
+  background-color:gray;
+  pointer-events: none;
+}
+/* tr:nth-child(n+19):nth-child(-n+36) td.scheduler-active {
+  background-color:yellow;
+} */
+/* td[data-row ="5"] .scheduler-active ||  td[data-row ="15"] .scheduler-active  {
+  
+  background-color:orange!important;
+
+}  */
+tr:nth-child(n+37) td.scheduler-active {
+  background-color:blue;
+}
+
+/* tr:nth-child(36)~ tr td.scheduler-active {
+  background-color:blue!important;
+} */
+.scheduler-activetop {
+    
+  border-top: 3px solid black!important;
+  border-left: 3px solid black!important;
+  border-right: 3px solid black!important;
+  /*border-bottom: none!important;*/
+  border-bottom-style:none!important;
+  background-color: #87bd41;
+ color: white;
+    
+ 
+}
+.scheduler-activebottom {
+  border-top-style:none!important;
+  border-left: 3px solid black!important;
+  border-right: 3px solid black!important;
+  border-bottom: 3px solid black!important;
+  background-color: #87bd41;
+  color: white;
+ 
+}
+.scheduler-activeall {
+  border-top: 3px solid black!important;
+  border-left: 3px solid black!important;
+  border-right: 3px solid black!important;
+  border-bottom: 3px solid black!important;
+  background-color: #87bd41;
+  color: white;
+} 
+ 
+ 
+.scheduler-activedesc {
+   border-left: 1px solid black!important;
+ display:table-caption;
+  background-color: #87bd41;
+  color: white;
+  width   : 40px!important;; 
+   height  : 18px!important;  
+} 
+
+.ignore{
+   
+  border: none;
+}
+
+.scheduler-disabled .scheduler-day-toggle,
+.scheduler-disabled .scheduler-half-toggle,
+.scheduler-disabled .scheduler-hour-toggle {
+  cursor: default;
+}
+
+.scheduler-disabled .scheduler-active {
+  background-color: #acdd6d
+}
+
+
+
+
+#ulmenu{
+  list-style: none;
+  list-style-type: none;
+  list-style-position: outside;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+}
+
+#Agregardescripcion {
+  line-height: 30px;
+  font-size: 16px;
+  z-index: 2;
+  cursor:pointer;
+  margin: 0;
+  padding: 0;
+  background-color:lightskyblue ;
+  color: black;
+}
+
+#menu{ 
+  width:150px;
+  position:absolute;      
+  border:1px solid black;
+  z-index: 2;
+  -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px#888;
+  box-shadow: 0 0 5px #888;
+}
